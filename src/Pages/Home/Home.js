@@ -4,7 +4,9 @@ import Consultants from "../Consultants/Consultants";
 const Home = () => {
   return (
     <div>
-      <h3>this is home page</h3>
+      <h3 className="text-center text-success my-2">
+        OVER 100 MULTI-DISCIPLINARY SPECIALISTS
+      </h3>
       <Consultants></Consultants>
     </div>
   );

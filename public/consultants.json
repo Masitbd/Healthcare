@@ -3,28 +3,41 @@
   "name": "DR. MD. HOSNE MOBARAK",
   "position": "Lead  consultant",
   "img": "https://t4.ftcdn.net/jpg/01/36/86/77/240_F_136867788_5Ptj2XlTHRbLxg6foE0eJiFXKFRbReBN.jpg",
-  "Degree": "MBBS, DLO, MCPS (ENT)"
+  "degree": "MBBS, DLO, MCPS (ENT)"
 },
 {
   "id": 2,
   "name": "PROF. DR. HAZERA KHATUN",
   "position": "consultant",
   "img": "https://t4.ftcdn.net/jpg/01/36/86/77/240_F_136867788_5Ptj2XlTHRbLxg6foE0eJiFXKFRbReBN.jpg",
-  "Degree": "MBBS, MCPS (Obstetrics and Gynaecology), MS (Obstetrics and Gynaecology)"
+  "degree": "MBBS, MCPS (Obstetrics and Gynaecology)"
 },
 {
   "id": 3,
   "name": "DR. A F M KAMAL UDDIN",
   "position": "consultant",
   "img": "https://t4.ftcdn.net/jpg/01/36/86/77/240_F_136867788_5Ptj2XlTHRbLxg6foE0eJiFXKFRbReBN.jpg",
-  "Degree": "MBBS, DTCD, MD (Radiotherapy)"
+  "degree": "MBBS, DTCD, MD (Radiotherapy)"
 },
 {
   "id": 4,
   "name": "DR. N A M MOMENUZZAMAN",
   "position": "consultant",
   "img": "https://t4.ftcdn.net/jpg/01/36/86/77/240_F_136867788_5Ptj2XlTHRbLxg6foE0eJiFXKFRbReBN.jpg",
-  "Degree": "MBBS, D-Card. MD (Card)"
+  "degree": "MBBS, D-Card. MD (Card)"
+},
+{
+  "id": 5,
+  "name": "DR. N A M MOMENUZZAMAN",
+  "position": "consultant",
+  "img": "https://t4.ftcdn.net/jpg/01/36/86/77/240_F_136867788_5Ptj2XlTHRbLxg6foE0eJiFXKFRbReBN.jpg",
+  "degree": "MBBS, D-Card. MD (Card)"
+},
+{
+  "id": 4,
+  "name": "DR. N A M MOMENUZZAMAN",
+  "position": "consultant",
+  "img": "https://t4.ftcdn.net/jpg/01/36/86/77/240_F_136867788_5Ptj2XlTHRbLxg6foE0eJiFXKFRbReBN.jpg",
+  "degree": "MBBS, D-Card. MD (Card)"
 }
-
 ]

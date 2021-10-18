@@ -9,38 +9,50 @@ import NotFound from "./Pages/NotFound/NotFound";
 import Services from "./Pages/Services/Services";
 import NavBar from "./Pages/Header/NavBar";
 import Gallery from "./Pages/Gallery/Gallery";
+import ServiceInfo from "./Pages/ServiceInfo/ServiceInfo/ServiceInfo";
+import Login from "./Pages/Login/Login/Login";
+import AuthProvider from "./context/AuthProvider";
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
     <div className="app">
-      <Router>
-        <Header></Header>
-        <NavBar></NavBar>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/services">
-            <Services></Services>
-          </Route>
-          <Route path="/departments">
-            <Departments></Departments>
-          </Route>
-          <Route path="/gallery">
-            <Gallery></Gallery>
-          </Route>
-          <Route path="/about">
-            <About></About>
-          </Route>
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <NavBar></NavBar>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/services">
+              <Services></Services>
+            </Route>
+            <Route path="/departments">
+              <Departments></Departments>
+            </Route>
+            <Route path="/gallery">
+              <Gallery></Gallery>
+            </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <PrivateRoute path="/serviceInfo/:serviceId">
+              <ServiceInfo></ServiceInfo>
+            </PrivateRoute>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
