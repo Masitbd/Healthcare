@@ -1,9 +1,9 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import { Carousel, NavLink } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <Carousel>
+    <Carousel className="pt-2">
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -13,8 +13,9 @@ const Header = () => {
           weight="100%"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h2 className="text-danger">
+            Best in the country for corporate health checkup
+          </h2>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -27,8 +28,7 @@ const Header = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h2 className="text-danger">Make telephone appointment</h2>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -41,10 +41,7 @@ const Header = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h2 className="text-danger">24 hour emergency service</h2>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

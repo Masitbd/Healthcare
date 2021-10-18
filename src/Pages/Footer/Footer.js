@@ -9,7 +9,8 @@ const Footer = () => {
           <div className="col-md-6 mt-md-0 mt-3">
             <h5 className="text-uppercase">Address</h5>
             <p>
-              Borgergade 12 <br /> 1300 København K. <br /> +45 33 18 79 00
+              Plot 15, Road 71, Gulshan <br /> Dhaka 1212
+              <br /> +88 33 18 79 00
             </p>
           </div>
 
@@ -18,8 +19,8 @@ const Footer = () => {
           <div className="col-md-3 mb-md-0 mb-3">
             <h5 className="text-uppercase">Contact Us</h5>
             <p>
-              Mandag til torsdag 9-16 <br />
-              Fredag 9-14
+              24 Hours <br />
+              Emergency +880 1914 001234
             </p>
           </div>
 
@@ -27,26 +28,24 @@ const Footer = () => {
             <h5 className="text-uppercase">Find Us</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="https://www.linkedin.com/company/studieskolen/">
-                  LinkedIn
-                </a>
+                <a href="https://uhlbd.com/#">LinkedIn</a>
               </li>
               <li>
-                <a href="https://www.facebook.com/studieskolen/">Facebook</a>
+                <a href="https://www.facebook.com/uhlbd/">Facebook</a>
               </li>
               <li>
-                <a href="https://twitter.com/Studieskolen">Twitter</a>
+                <a href="https://uhlbd.com/">Twitter</a>
               </li>
               <li>
-                <a href="https://www.instagram.com/studieskolen/">Instrgram</a>
+                <a href="https://uhlbd.com/">Instrgram</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div className="footer-copyright text-center py-3">
-        2021 Copyright © studieskolen.dk
+      <div className="footer-copyright text-center pb-1">
+        2021 Copyright © united.com
       </div>
     </footer>
   );
