@@ -13,6 +13,7 @@ import ServiceInfo from "./Pages/ServiceInfo/ServiceInfo/ServiceInfo";
 import Login from "./Pages/Login/Login/Login";
 import AuthProvider from "./context/AuthProvider";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
+import ConsultantInfo from "./Pages/ConsultantInfo/ConsultantInfo";
 
 function App() {
   return (
@@ -45,6 +46,9 @@ function App() {
             </Route>
             <PrivateRoute path="/serviceInfo/:serviceId">
               <ServiceInfo></ServiceInfo>
+            </PrivateRoute>
+            <PrivateRoute path="/consultentInfo/:consultentId">
+              <ConsultantInfo></ConsultantInfo>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
