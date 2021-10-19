@@ -24,11 +24,16 @@ const NavBar = () => {
         <NavLink activeClassName="active" to="/about">
           About
         </NavLink>
-        <NavLink activeClassName="active" to="/login">
-          Login
-        </NavLink>
-        <span>{user.displayName}</span>
-        {user?.email && <button onClick={logout}>Log out</button>}
+        {user.email && (
+          <span style={{ color: "white" }}>Hello {user.displayName}</span>
+        )}
+        {user.email ? (
+          <button onClick={logout}>Log out</button>
+        ) : (
+          <NavLink activeClassName="active" to="/login">
+            Login
+          </NavLink>
+        )}
       </nav>
     </div>
   );
