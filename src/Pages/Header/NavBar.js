@@ -25,7 +25,7 @@ const NavBar = () => {
           About
         </NavLink>
         {user.email && (
-          <span style={{ color: "white" }}>Hello {user.displayName}</span>
+          <span style={{ color: "white" }}>Hello {user.email}</span>
         )}
         {user.email ? (
           <button onClick={logout}>Log out</button>

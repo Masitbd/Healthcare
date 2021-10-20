@@ -1,6 +1,7 @@
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import React from "react";
 import { useState } from "react";
+import { Card } from "react-bootstrap";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import "./Login.css";
@@ -38,10 +39,11 @@ const Login = () => {
       const user = result.user;
       console.log(user);
     });
+    history.push("/");
   };
   return (
     <div className="login-form container">
-      <div>
+      <Card className="bg-secondary my-4">
         <h2>Please login</h2>
         <form onSubmit={handleRegistration}>
           <input
@@ -52,18 +54,32 @@ const Login = () => {
             placeholder="Enter your email"
           />
           <br />
-          <input type="password" onBlur={handlePasswordChange} name="" id="" />
+          <input
+            className="my-2"
+            type="password"
+            onBlur={handlePasswordChange}
+            name=""
+            placeholder="Enter password"
+            id=""
+          />
           <br />
           {error}
           <br />
-          <input type="submit" value="Submit" />
+          <input
+            className="btn btn-danger w-100"
+            type="submit"
+            value="Submit"
+          />
+          {/*  {history.push("/")} */}
         </form>
         <p>
           New to Health care system{" "}
           <Link to="/register">Create New Account</Link>
         </p>
-        <button onClick={handleGoogleLogin}>Google signin</button>
-      </div>
+        <button className="btn btn-warning " onClick={handleGoogleLogin}>
+          Google signin
+        </button>
+      </Card>
     </div>
   );
 };
