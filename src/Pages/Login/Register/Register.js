@@ -75,7 +75,7 @@ const Register = () => {
           />
         </form>
 
-        <Link to="/register">Already registeded</Link>
+        <Link to="/login">Already registeded</Link>
       </Card>
     </div>
   );

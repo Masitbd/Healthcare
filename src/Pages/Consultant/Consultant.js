@@ -6,7 +6,7 @@ const Consultant = (props) => {
   console.log(props);
   const { id, name, position, img, degree } = props.consultant;
   return (
-    <div>
+    <div className="">
       <div className="display-card">
         <img src={img} alt="" height="200" width="100%" />
         <p>Name: {name}</p>
