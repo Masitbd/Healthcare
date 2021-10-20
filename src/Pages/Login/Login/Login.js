@@ -39,7 +39,7 @@ const Login = () => {
       const user = result.user;
       console.log(user);
     });
-    history.push("/");
+    history.push("/home");
   };
   return (
     <div className="login-form container">

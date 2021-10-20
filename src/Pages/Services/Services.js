@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Service from "../Service/Service";
+import ServiceInfo from "../ServiceInfo/ServiceInfo/ServiceInfo";
 import "./Services.css";
 
 const Services = () => {
@@ -17,6 +18,14 @@ const Services = () => {
           <Service key={service.id} service={service} />
         ))}
       </div>
+      <div>
+       {
+       /* services.find */
+       <ServiceInfo services={services} />
+       
+       }
+      </div>
+      div
     </div>
   );
 };

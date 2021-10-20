@@ -1,21 +1,22 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React from "react";
+import { Card } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import service from "../../Service/Service";
 
-const ServiceInfo = () => {
-  const [services, setServices] = useState([]);
+const ServiceInfo = (props) => {
+  const { services } = props;
+
   const { serviceId } = useParams();
-  useEffect(() => {
-    fetch("./services.json")
-      .then((response) => response.json())
-      .then((data) => setServices(data));
-  }, []);
+
+  const findRecord =
+    services && services.find((service) => service === serviceId);
+
   return (
-    <div>
-      <h2>This is service info {serviceId}</h2>
-      {services.find((service) => service === serviceId)}
-    </div>
+    <Card className="container px-5 py-2">
+      <h2>Service no {serviceId}</h2>
+      <p>Blood bank</p>
+      <p>+00880194001245</p>
+      <p>4000 Taka</p>
+    </Card>
   );
 };
 
